@@ -20,4 +20,8 @@ head(pbmc@meta.data, 5)
 # Visualize QC metrics as a violin plot
 VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 
+<<<<<<< HEAD
 #let me try out if i can update anything
+=======
+
+>>>>>>> a279a90dbe13f51195a470b63c893d98a2f61a93
