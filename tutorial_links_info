@@ -1,9 +1,0 @@
-Introduction to scRNA-seq integration:
-https://satijalab.org/seurat/articles/integration_introduction.html
-
-Guided Clustering Tutorial:
-https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
-
-To commit and upload to remote repo:
-git gommit
-git push origin main
