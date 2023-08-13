@@ -76,9 +76,20 @@ pbmc <- RunUMAP(pbmc, dims = 1:15)
 DimPlot(pbmc, reduction = "umap")
 
 cluster2.markers <- FindMarkers(pbmc, ident.1 = 1, min.pct = 0)
-head(cluster2.markers, n = 5)
+head(cluster2.markers, n = 10)
 
+RunTSNE( pbmc, reduction = "pca", cells = NULL,
+  dims = 1:5,
+  features = NULL,
+  seed.use = 1,
+  tsne.method = "Rtsne",
+  dim.embed = 2,
+  distance.matrix = NULL,
+  reduction.name = "tsne",
+  reduction.key = "tSNE_",
+)
 
+RunTSNE(pbmc, reduction = "pca")
 
 
 
